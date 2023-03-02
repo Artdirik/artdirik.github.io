@@ -1,0 +1,56 @@
+<DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Мой калькулятор </title>
+    <link rel="stylesheet" href="st.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <h1> Калькулятор </h1>
+    <!--<svg id="svg_menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 15L22 9C22 4 20 2 15 2L9 2C4 2 2 4 2 9L2 15C2 20 4 22 9 22L15 22C20 22 22 20 22 15Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.5 8.42993L14.6 8.42993" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.45 8.42993L5.5 8.42993" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.65 8.43003C12.65 6.99409 11.4859 5.83003 10.05 5.83003C8.61401 5.83003 7.44995 6.99409 7.44995 8.43003C7.44995 9.86597 8.61401 11.03 10.05 11.03C11.4859 11.03 12.65 9.86597 12.65 8.43003Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.5 15.5701L16.55 15.5701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.4 15.5701L5.5 15.5701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.55 15.5699C16.55 14.134 15.3859 12.9699 13.95 12.9699C12.514 12.9699 11.35 14.134 11.35 15.5699C11.35 17.0059 12.514 18.1699 13.95 18.1699C15.3859 18.1699 16.55 17.0059 16.55 15.5699Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>-->
+
+    <section id="s1">
+        <img class="sec_img" src="img/Frame 3.png">
+        <h2>ax<sup>2</sup>+bx+c</h2>
+        <input id="in1" class="in" placeholder="Введите a">
+        <input id="in2" class="in" placeholder="Введите b">
+        <input id="in3" class="in" placeholder="Введите c">
+        <div class="button" onclick="x1()" id="bu1"> <h3 class="bu_h3"> Посчитать </h3> </div>
+    </section>
+
+    <section id="s2">
+        <img class="sec_img" src="img/Frame 4.png">
+        <h2>Гипотенуза</h2>
+        <input id="in4" class="in" placeholder="Катет а">
+        <input id="in5" class="in" placeholder="Катет б">
+        <div class="button" onclick="x2()" id="bu2"> <h3 class="bu_h3"> Посчитать </h3> </div>
+    </section>
+
+    <section id="s3">
+        <img class="sec_img" src="img/Frame 5.png">
+        <h2>Угол треугольника</h2>
+        <input id="in6" class="in" placeholder="Угол а">
+        <input id="in7" class="in" placeholder="Угол б">
+        <div class="button" onclick="x3()" id="bu3"> <h3 class="bu_h3"> Посчитать </h3> </div>
+    </section>
+
+    <img src="img/вперёд.png" id="right" onclick="smenaV()">
+    <img src="img/назад.png" id="left" onclick="smenaN()">
+
+    <footer id="footer">
+        <div class="footer"> <h3 id="fo1" class="fo_h3">  </h3> </div>
+        <div class="footer"> <h3 id="fo2" class="fo_h3">  </h3> </div>
+        <div class="button" id="bu0" onclick="closee()"> <h3 class="bu_h3"> Закрыть </h3> </div>
+    </footer>
+</body>
+<script src="sc.js"></script>
+</html>
