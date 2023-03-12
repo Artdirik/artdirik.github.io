@@ -1,56 +1,66 @@
 <DOCTYPE HTML>
-<html>
+    
+<html id="html">
 <head>
     <meta charset="utf-8">
-    <title> Мой калькулятор </title>
-    <link rel="stylesheet" href="st.css">
+    <title> Трудостройка </title>
+    <link rel="stylesheet" href="set/main_style.css">
+    <link rel="stylesheet" href="set/pages.css">
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <h1> Калькулятор </h1>
-    <!--<svg id="svg_menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22 15L22 9C22 4 20 2 15 2L9 2C4 2 2 4 2 9L2 15C2 20 4 22 9 22L15 22C20 22 22 20 22 15Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M18.5 8.42993L14.6 8.42993" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M7.45 8.42993L5.5 8.42993" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12.65 8.43003C12.65 6.99409 11.4859 5.83003 10.05 5.83003C8.61401 5.83003 7.44995 6.99409 7.44995 8.43003C7.44995 9.86597 8.61401 11.03 10.05 11.03C11.4859 11.03 12.65 9.86597 12.65 8.43003Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M18.5 15.5701L16.55 15.5701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M9.4 15.5701L5.5 15.5701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M16.55 15.5699C16.55 14.134 15.3859 12.9699 13.95 12.9699C12.514 12.9699 11.35 14.134 11.35 15.5699C11.35 17.0059 12.514 18.1699 13.95 18.1699C15.3859 18.1699 16.55 17.0059 16.55 15.5699Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>-->
 
-    <section id="s1">
-        <img class="sec_img" src="img/Frame 3.png">
-        <h2>ax<sup>2</sup>+bx+c</h2>
-        <input id="in1" class="in" placeholder="Введите a">
-        <input id="in2" class="in" placeholder="Введите b">
-        <input id="in3" class="in" placeholder="Введите c">
-        <div class="button" onclick="x1()" id="bu1"> <h3 class="bu_h3"> Посчитать </h3> </div>
-    </section>
+    <svg id="index_svg" width="268" height="96" viewBox="0 0 268 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M139.4 -1.09167e-05L122 -1.09317e-05L138.866 52.1485L119.399 96.0001H136.199L179.399 8.5907e-05L162.399 8.60395e-05L148.773 29.8312L139.4 -1.09167e-05ZM86 52C92.8956 52 99.5088 49.2607 104.385 44.3848C109.261 39.5088 112 32.8956 112 26C112 19.1044 109.261 12.4912 104.385 7.61522C99.5088 2.73927 92.8956 -4.12321e-06 86 -5.46584e-06L70 -5.02872e-06L70 96H86L86 52ZM93.0708 18.9292C91.1955 17.0539 88.6521 16.0004 86 16.0004V35.9996C88.6521 35.9996 91.1955 34.9461 93.0708 33.0708C94.9461 31.1955 95.9996 28.6521 95.9996 26C95.9996 23.3479 94.9461 20.8045 93.0708 18.9292ZM0 8.92549e-05H56V16.0001L36 16.0001L36 96.0001L20 96.0001L20 16.0001L0 16.0001V8.92549e-05ZM222 -5.46584e-06C236.359 -5.46584e-06 248 11.6406 248 26C248 40.3594 236.359 52 222 52C207.641 52 196 40.3594 196 26C196 11.6406 207.641 -5.46584e-06 222 -5.46584e-06ZM211.999 26C211.999 31.5234 216.477 36.001 222 36.001C227.523 36.001 232.001 31.5234 232.001 26C232.001 20.4766 227.523 15.999 222 15.999C216.477 15.999 211.999 20.4766 211.999 26ZM268 50C268 56.0408 266.81 62.0225 264.498 67.6034C262.187 73.1844 258.798 78.2554 254.527 82.5269C250.255 86.7984 245.184 90.1867 239.603 92.4985C234.022 94.8102 228.041 96 222 96C215.959 96 209.978 94.8102 204.397 92.4985C198.816 90.1867 193.745 86.7984 189.473 82.5269C185.202 78.2554 181.813 73.1844 179.502 67.6034C177.19 62.0225 176 56.0408 176 50H191.998C191.998 53.9399 192.774 57.8413 194.282 61.4813C195.789 65.1213 197.999 68.4287 200.785 71.2147C203.571 74.0007 206.879 76.2106 210.519 77.7184C214.159 79.2261 218.06 80.0021 222 80.0021C225.94 80.0021 229.841 79.2261 233.481 77.7184C237.121 76.2106 240.429 74.0007 243.215 71.2147C246.001 68.4287 248.211 65.1213 249.718 61.4813C251.226 57.8413 252.002 53.9399 252.002 50H268Z" fill="url(#paint0_linear_225_1600)"/>
+        <defs>
+        <linearGradient id="paint0_linear_225_1600" x1="79" y1="-14.4953" x2="220.852" y2="131.403" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F76E11"/>
+        <stop offset="0.439527" stop-color="#FA1F21"/>
+        <stop offset="1" stop-color="#F70B6C"/>
+        </linearGradient>
+        </defs>
+    </svg>
 
-    <section id="s2">
-        <img class="sec_img" src="img/Frame 4.png">
-        <h2>Гипотенуза</h2>
-        <input id="in4" class="in" placeholder="Катет а">
-        <input id="in5" class="in" placeholder="Катет б">
-        <div class="button" onclick="x2()" id="bu2"> <h3 class="bu_h3"> Посчитать </h3> </div>
-    </section>
+    <div class="press_down">
+        <p onclick="loc('r')" class="politic_p"> Политика и соглашение </p>
+        <div onclick="loc('r')" class="main_button">  <p class="main_button_p">  Войти через Яндекс  </p>  </div>
+        <div onclick="loc('r')" class="nomain_button">  <p class="nomain_button_p">  Использовать Госуслуги  </p>  </div>
+    </div>
 
-    <section id="s3">
-        <img class="sec_img" src="img/Frame 5.png">
-        <h2>Угол треугольника</h2>
-        <input id="in6" class="in" placeholder="Угол а">
-        <input id="in7" class="in" placeholder="Угол б">
-        <div class="button" onclick="x3()" id="bu3"> <h3 class="bu_h3"> Посчитать </h3> </div>
-    </section>
-
-    <img src="img/вперёд.png" id="right" onclick="smenaV()">
-    <img src="img/Назад.png" id="left" onclick="smenaN()">
-
-    <footer id="footer">
-        <div class="footer"> <h3 id="fo1" class="fo_h3">  </h3> </div>
-        <div class="footer"> <h3 id="fo2" class="fo_h3">  </h3> </div>
-        <div class="button" id="bu0" onclick="closee()"> <h3 class="bu_h3"> Закрыть </h3> </div>
-    </footer>
 </body>
-<script src="sc.js"></script>
+<script src="set/animation.js"></script>
+<script>
+    /* Свайпы */
+
+let x1 = null;
+let y1 = null;
+
+function hTouchStart(event) {
+    x1 = event.touches[0].clientX;
+    y1 = event.touches[0].clientY;
+    console.log(x1, y1);
+}
+
+function hTouchMove(event) {
+    if(!x1 || !y1) return false;
+    let x2 = event.touches[0].clientX;
+    let y2 = event.touches[0].clientY;
+    console.log(x2, y2);
+    let xDiff = x2 - x1;
+    let yDiff = y2 - y1;
+
+    if(Math.abs(xDiff) > Math.abs(yDiff)) {
+        if (xDiff > 0) console.log("свайп вправо");
+        else console.log("свайп влево");
+    }else{
+        if (yDiff > 0) console.log("свайп вверх");
+        else console.log("свайп вниз" + yDiff);
+    }
+    x1 = null;
+    y1 = null;
+}
+
+html.addEventListener("touchmove", hTouchStart, false);
+html.addEventListener("touchmove", hTouchMove, false);
+</script>
 </html>

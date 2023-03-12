@@ -1,0 +1,148 @@
+<DOCTYPE HTML>
+    
+<html id="html">
+<head>
+    <meta charset="utf-8">
+    <title> Реальность </title>
+    <link rel="stylesheet" href="set/main_style.css">
+    <link rel="stylesheet" href="set/pages.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=403f639a-564c-48ef-ae98-f69ae604f1b7&lang=ru_RU&onload=init"> </script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"/>
+
+</head>
+<body id="YMapsID" class="contrast_body">
+
+    <header>
+        <h2 onclick="close_main();" class="header_h2"> Реальность </h2>
+        <h2 class="header_h2"> Цифра </h2>
+        <div class="header_lin"> </div>
+        <img onclick="open_profile();" class="avatar" src="set/img/ava.jpg">
+    </header>
+
+    <div class="add_prof">
+        <svg class="add_prof_svg" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 45H67.5" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M45 67.5V22.5" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <main onclick="open_main();" id="main_r">
+        <div class="main_arm"> </div>
+        <input placeholder="Найти..." class="main_input_search">
+        <div class="main_choice"> <p class="main_choice_p"> Вакансии </p> </div>
+        <div class="main_choice main_choice2"> <p class="main_choice_p"> Резюме </p> </div>
+        <div class="main_choice_lin"> </div>
+
+        <section id="prof_section_1" class="prof_section"> 
+            <h1 class="prof_title"> Работник зала в магазине «Дикси» </h1>
+            <h5 class="prof_adres"> г.Смоленск, ул.Румянцева 15 </h5>
+            <h3 class="prof_additionally_age"> <p class="prof_color"> Возраст: &nbsp</p> от 14 лет </h3>
+            <h3 class="prof_additionally_schedule"> <p class="prof_color"> График: &nbsp </p> 4 часа в день, 5/2 </h3>
+            <h3 class="prof_additionally_experience"> <p class="prof_color"> Опыт: &nbsp </p> нет </h3>
+            <h2 class="prof_subtitle"> Описание </h2>
+            <h4 class="prof_description"> Если вы отвественный и надёжный человек, расчитывайте на вермя работы более года и работаете по договору, то вам точно к нам! </h4>
+        </section>
+
+        <section id="prof_section_2" class="prof_section"> 
+            <h1 class="prof_title"> Работник зала в магазине «Пятёрочка» </h1>
+            <h5 class="prof_adres"> г.Смоленск, ул.Румянцева 15 </h5>
+            <h3 class="prof_additionally_age"> <p class="prof_color"> Возраст: &nbsp</p> от 14 лет </h3>
+            <h3 class="prof_additionally_schedule"> <p class="prof_color"> График: &nbsp </p> 4 часа в день, 5/2 </h3>
+            <h3 class="prof_additionally_experience"> <p class="prof_color"> Опыт: &nbsp </p> нет </h3>
+            <h2 class="prof_subtitle"> Описание </h2>
+            <h4 class="prof_description"> Если вы отвественный и надёжный человек, расчитывайте на вермя работы более года и работаете по договору, то вам точно к нам! </h4>
+        </section>
+
+        <section id="prof_section_3" class="prof_section"> 
+            <h1 class="prof_title"> Работник зала в магазине «Цветочный» </h1>
+            <h5 class="prof_adres"> г.Смоленск, ул.Румянцева 15 </h5>
+            <h3 class="prof_additionally_age"> <p class="prof_color"> Возраст: &nbsp</p> от 14 лет </h3>
+            <h3 class="prof_additionally_schedule"> <p class="prof_color"> График: &nbsp </p> 4 часа в день, 5/2 </h3>
+            <h3 class="prof_additionally_experience"> <p class="prof_color"> Опыт: &nbsp </p> нет </h3>
+            <h2 class="prof_subtitle"> Описание </h2>
+            <h4 class="prof_description"> Если вы отвественный и надёжный человек, расчитывайте на вермя работы более года и работаете по договору, то вам точно к нам! </h4>
+        </section>
+
+        <!-- <section id="vacancy">
+            <h2 class="vacancy_р2"> Добавление вакансии </h2>
+            <div class="vacancy_var">
+                <h6 class="vacancy_var_name">  </h6>
+                <input class="vacancy_var_input" id="vacancy_input_name">
+            </div>
+            <div class="vacancy_var">
+                <h6 class="vacancy_var_name">  </h6>
+                <input class="vacancy_var_input" id="vacancy_input_age">
+            </div>
+            <div class="vacancy_var">
+                <h6 class="vacancy_var_name">  </h6>
+                <input class="vacancy_var_input" id="vacancy_input_table">
+            </div>
+            <div class="vacancy_var">
+                <h6 class="vacancy_var_name">  </h6>
+                <input class="vacancy_var_input" id="vacancy_input_ex">
+            </div>
+        </section> -->
+
+        <section id="section_button">
+            <p class="section_button_pl" id="section_button_pl" onclick="section_pred();"> Вернуться </p>
+            <p class="section_button_pr" id="section_button_pr" onclick="section_sled();"> Следующая </p>
+            <div class="section_button_main_button"> <p class="section_button_main_button_p"> Откликнуться </p> </div>
+            <div onclick="close_main();" class="section_button_main_button_mini"> 
+                <svg class="section_button_main_button_mini_svg" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.9996 17.7087C17.1535 17.7087 18.8996 15.9626 18.8996 13.8087C18.8996 11.6548 17.1535 9.90869 14.9996 9.90869C12.8457 9.90869 11.0996 11.6548 11.0996 13.8087C11.0996 15.9626 12.8457 17.7087 14.9996 17.7087Z" stroke="url(#paint0_linear_246_1616)" stroke-width="2"/>
+                    <path d="M4.52415 11.5339C6.98665 0.70889 23.0241 0.72139 25.4741 11.5464C26.9116 17.8964 22.9616 23.2714 19.4991 26.5964C16.9866 29.0214 13.0116 29.0214 10.4866 26.5964C7.03665 23.2714 3.08665 17.8839 4.52415 11.5339Z" stroke="url(#paint1_linear_246_1616)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_246_1616" x1="13.3989" y1="8.73095" x2="20.8794" y2="11.487" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F76E11"/>
+                        <stop offset="0.439527" stop-color="#FA1F21"/>
+                        <stop offset="1" stop-color="#F70B6C"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_246_1616" x1="10.5751" y1="-0.352479" x2="31.902" y2="6.42443" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F76E11"/>
+                        <stop offset="0.439527" stop-color="#FA1F21"/>
+                        <stop offset="1" stop-color="#F70B6C"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <section id="profile">
+        <div class="profile_header">
+            <h1 class="profile_h1"> Хватов Дмитрий Романович, 17 лет </h1>
+            <img class="avatar ava_profile" src="set/img/ava.jpg">
+        </div>
+
+        <div class="section_aboutme">
+            <h6 class="section_profile_h6"> О себе </h6>
+            <p class="section_profile_p"> Графический и веб дизайнер, имею большой опыт работы в командах, где успешно стоял на руководящих должностях </p>
+        </div>
+
+        <div class="section_aboutme section_aboutme_center">
+            <h6 class="section_profile_h6"> Номер телефона </h6>
+            <p class="section_profile_p"> +7 (951) 700-37-32 </p>
+        </div>
+
+        <div class="section_aboutme section_aboutme_center">
+            <h6 class="section_profile_h6"> Город и образовательное учреждение </h6>
+            <p class="section_profile_p"> г.Смоленск, МБОУ СШ 12 </p>
+        </div>
+
+        <div class="section_aboutme section_aboutme_center">
+            <h6 class="section_profile_h6"> Соц.сети и мессенджеры </h6>
+            <p class="section_profile_p"> vk.com/artdirik <br> t.me/artdirik </p>
+        </div>
+
+        <div class="section_profile_button"> 
+            <div class="section_profile_button_out"> <p class="section_profile_button_out_p"> Выход </p> </div>
+            <div class="section_profile_button_out"> <p class="section_profile_button_out_p"> Опубликованные вакансии </p> </div>
+            <div onclick="close_profile()" class="section_profile_button_out"> <p class="section_profile_button_out_p"> Назад </p> </div>
+            <div class="main_arm profile_arm">  </div>
+        </div>
+    </section>
+
+</body>
+<script src="set/animation.js"></script>
+</html>
