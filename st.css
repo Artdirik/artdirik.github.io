@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+@font-face {
+	font-family: "Cann"; 
+	src: local("Cann"),
+		url(Cann.ttf); 
+}
+
+@font-face {
+	font-family: "Cann Bold"; 
+	src: local("Cann Bold"),
+		url(Cann\ Bold.ttf); 
+}
+
+html{
+    background-color: #131313;
+}
+
+
+
+/*menu*/
+
+h1{
+    font-size: 24pt;
+    font-family: Cann Bold;
+    color: #fcfcfc;
+    position: fixed;
+    top: 24px;
+    left: 20px;
+}
+
+path{
+    stroke: #f0f0f0;
+    stroke-width: 2;
+}
+
+#svg_menu{
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    top: 20px;
+    left: auto;
+    right: 20px;
+}
+
+
+
+/* section */
+
+section{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin-top: 86px;
+    border-radius: 24px;
+    background-color: #000;
+    padding-bottom: 20px;
+    position: fixed;
+    transition: 1s;
+}
+
+.sec_img{
+    width: 94%;
+    border-radius: 12px;
+    height: auto;
+    margin-left: 6%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 18pt;
+    font-family: Cann Bold;
+    color: #fcfcfc;
+    margin-left: 6%;
+    margin-bottom: 20px;
+}
+
+.in{
+    width: 88%;
+    height: 56px;
+    background-color: #000;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-left: 6%;
+    font-size: 13pt;
+    font-family: Cann;
+    padding-left: 20px;
+    color: #fcfcfc;
+    outline: 2px solid #131313;
+}
+
+.in_mini{
+    width: 42%;
+    float: left;
+}
+
+.in_mini_right{
+    width: 42%;
+    float: left;
+    margin-left: 4%;
+}
+
+.in:focus{
+    outline:1px solid #525252;
+}
+
+.button{
+    width: 88%;
+    height: 39px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin-left: 6%;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.button_m{
+    float: left;
+}
+
+.bu_h3{
+    font-size: 13pt;
+    font-family: Cann;
+    color: #000;
+}
+
+#right{
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+
+#left{
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    top: auto;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+#s2{
+    margin-left: 600px;
+    transform: rotate(20deg);
+}
+
+#s3{
+    margin-left: 600px;
+    transform: rotate(20deg);
+}
+
+
+
+/*footer*/
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #0c0c0c;
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 30px;
+    top: auto;
+    bottom: -100%;
+    padding-top: 25px;
+    transition: 0.5s;
+}
+
+.footer{
+    width: 88%;
+    height: 39px;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    margin-left: 6%;
+    text-align: center;
+    padding-top: 17px;
+    margin-bottom: 20px;
+}
+
+.fo_h3{
+    font-size: 13pt;
+    font-family: Cann;
+    color: #f0f0f0;
+    font-weight: 300;
+}
