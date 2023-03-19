@@ -150,12 +150,7 @@ h2{
     transition: 1s;
 }
 
-#s2{
-    margin-left: 600px;
-    transform: rotate(20deg);
-}
-
-#s3{
+#s2, #s3, #s4{
     margin-left: 600px;
     transform: rotate(20deg);
 }
