@@ -1,34 +1,12 @@
-/*function smenaV(){
-    let s1 = document.getElementById("s1").style;
-    let s2 = document.getElementById("s2").style;
-    
-    s1.transform = "rotate(-20deg)";
-    s1.marginLeft = "-600px";
-
-    s2.transform = "rotate(0deg)";
-    s2.marginLeft = "0px";
-}
-
-function smenaN(){
-    let s1 = document.getElementById("s1").style;
-    let s2 = document.getElementById("s2").style;
-    
-    s1.transform = "rotate(0deg)";
-    s1.marginLeft = "0px";
-
-    s2.transform = "rotate(20deg)";
-    s2.marginLeft = "600px";
-}*/
-
-let x    = 0;
-let s1   = document.getElementById("s1").style;
+let x    = 0;                                      // Динам слайда
+let s1   = document.getElementById("s1").style;    // получение секций
 let s2   = document.getElementById("s2").style;
 let s3   = document.getElementById("s3").style;
 let s4   = document.getElementById("s4").style;
-let r    = document.getElementById("right").style;
-let l    = document.getElementById("left").style;
+let r    = document.getElementById("right").style; // кнопка право
+let l    = document.getElementById("left").style;  // кнопка лево
 
-function smenaV(){
+function smenaV(){                                 // смена вперёд
     if(x == 0){
         x              = 1;
         s1.transform   = "rotate(-20deg)";
@@ -52,7 +30,7 @@ function smenaV(){
     }
 }
 
-function smenaN(){
+function smenaN(){                                 // смена назад
     if(x == 3){
         x = 2;
         s3.transform   = "rotate(0deg)";
@@ -135,9 +113,9 @@ function x4(){
 
     if(S1/V1 > S2/V2){
         itog = S1/V1 - S2/V2;
-        oopen("Мне выходить через: " + itog.toFixed(4) + "ч", "Больше решений нет");
+        oopen("Ему выходить через: " + itog.toFixed(4) + "ч", "Больше решений нет");
     }else{
         itog = S2/V2 - S1/V1;
-        oopen("Ему выходить через: " + itog.toFixed(4) + "ч", "Больше решений нет");
+        oopen("Мне выходить через: " + itog.toFixed(4) + "ч", "Больше решений нет");
     }
 }
